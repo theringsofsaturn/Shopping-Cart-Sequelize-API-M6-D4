@@ -4,16 +4,15 @@ const Cart = sequelize.define(
   "Cart",
   {
     // Model attributes are defined here
-    firstName: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    lastName: {
-      type: DataTypes.STRING,
-      // allowNull defaults to true
+    id: {
+      primaryKey: true,
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
     },
   },
-  {
-    // Other model options go here
-  }
+  // {
+  //   // Other model options go here
+  // }
 );
+
+export default Cart;
