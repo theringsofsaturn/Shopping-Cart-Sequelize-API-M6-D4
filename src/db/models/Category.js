@@ -11,9 +11,9 @@ const Category = sequelize.define(
         autoIncrement: true,
       },
       name: {
-        type: DataTypes.STRING,
+        type: DataTypes.STRING, 
         allowNull: false,
-      },
+      }, 
     },
     { timestamps: false }
   );
