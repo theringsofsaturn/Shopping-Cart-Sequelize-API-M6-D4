@@ -1,4 +1,6 @@
 import sequelize from "../sequelize.js";
+import s from "sequelize";
+const { DataTypes } = s;
 
 const Cart = sequelize.define(
   "Cart",
